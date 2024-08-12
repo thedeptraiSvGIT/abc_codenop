@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+            background-color: #a37878;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch; /* Đảm bảo các phần tử có chiều cao bằng nhau */
+            
+           
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            
+        }
+        .advertisement, .product-detail {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            flex: 1; /* Đảm bảo tất cả các phần tử có cùng chiều cao */
+            margin: 0 8px;
+        }
+        .advertisement:hover, .product-detail:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .advertisement img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-detail {
+            flex: 2;
+            max-width: 800px;
+            padding: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-description {
+            margin-top: 16px;
+        }
+        .product-description h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #007bff;
+        }
+        .product-description ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .product-description li {
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .product-description strong {
+            font-weight: bold;
+            color: #333;
+        }
+        .purchase-options {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .quantity {
+            margin-bottom: 12px;
+        }
+        .quantity label {
+            font-size: 16px;
+            margin-right: 8px;
+        }
+        .quantity-input {
+            width: 60px;
+            padding: 5px;
+            text-align: center;
+        }
+        .buy-now, .add-to-cart {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .buy-now:hover, .add-to-cart:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="advertisement">
+            <img src="/SHOP_ME_VA_BE/ChiTietSanPham/sale70.jpg" alt="Quảng cáo bên trái">
+        </div>
+
+        <div class="product-detail">
+            <a href="/SHOP_ME_VA_BE/BENGU/bengu.html">quay lại trang</a>
+            <img src="/SHOP_ME_VA_BE/BENGU/6a6dff808a28958350b5337ef5161584-5198.jpg" alt="Ghế ngồi ô tô GB Unari Stage" class="product-image">
+            <div class="product-description">
+                <h2>Thông tin sản phẩm</h2>
+                <p><strong>Mô tả ngắn:</strong></p>
+                <ul>
+                    <li>Tải trọng lớn lên đến hơn 100kg, bố mẹ có thể ngồi cùng bé.</li>
+                    <li>Có thể điều chỉnh chiều cao 10 nấc để phù hợp với giường của bố mẹ.</li>
+                    <li>Mở một bên thành giường để bé nằm sát giường bố mẹ, thành bên sau khi mở có thể đặt ở dưới của giường để tạo thành giá để đồ cho bé.</li>
+                    <li>Làm từ gỗ sồi AAA Alpine của Đức chắc chắn, vân gỗ đẹp và không bị nứt và biến dạng.</li>
+                    <li>Sử dụng sơn nước cao cấp Sherwin của Mỹ, không mùi, không vị, an toàn tuyệt đối cho bé.</li>
+                    <li>Mở ra một bên để bé nằm cạnh mẹ và có kèm thanh gắn trợ lực cho cũi vẫn chắc chắn.</li>
+                    <li>Bề mặt được mài nhẵn và mịn, hoàn toàn không có dăm.</li>
+                    <li>4 bánh xe di chuyển linh hoạt và êm ái mà không gây ra tiếng động.</li>
+                    <li>Có thể làm thành bảng và bàn học cho bé khi lớn.</li>
+                </ul>
+                <p><strong>Thông tin sản phẩm:</strong></p>
+                <p>Giường gũi gỗ Sồi kub Cao Cấp - Giường cũi gỗ sồi Kub có 10 chế độ tiêu chuẩn Châu Âu sơn gốc nước không mùi không hóa chất độc hại là một sản phẩm nội thất trẻ em cao cấp, được làm từ chất liệu gỗ sồi cao cấp loại AAA. Sản phẩm có thiết kế đa năng, có thể điều chỉnh 10 mức chiều cao, phù hợp với giường của bố mẹ, giúp bố mẹ dễ dàng bế bé ra vào. Cũi có thể chuyển đổi thành nhiều chế độ khác nhau, phù hợp với từng giai đoạn phát triển của bé, từ sơ sinh đến 6 tuổi.</p>
+            </div>
+            <div class="purchase-options">
+                <div class="quantity">
+                    <label for="quantity">Số lượng:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" class="quantity-input">
+                </div>
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-to-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+
+        <div class="advertisement">
+            <img src="/SHOP_ME_VA_BE/ChiTietSanPham/bigsale.jpg" alt="Quảng cáo bên phải">
+        </div>
+    </div>
+</body>
+</html>

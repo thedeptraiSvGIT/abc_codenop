@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+
+        background-color: #a37878;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch; /* Đảm bảo các phần tử có chiều cao bằng nhau */
+
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+      }
+      .advertisement,
+      .product-detail {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        flex: 1; /* Đảm bảo tất cả các phần tử có cùng chiều cao */
+        margin: 0 8px;
+      }
+      .advertisement:hover,
+      .product-detail:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .advertisement img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      }
+      .product-detail {
+        flex: 2;
+        max-width: 800px;
+        padding: 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .product-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      }
+      .product-description {
+        margin-top: 16px;
+      }
+      .product-description h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+        color: #007bff;
+      }
+      .product-description ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .product-description li {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .product-description strong {
+        font-weight: bold;
+        color: #333;
+      }
+      .purchase-options {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .quantity {
+        margin-bottom: 12px;
+      }
+      .quantity label {
+        font-size: 16px;
+        margin-right: 8px;
+      }
+      .quantity-input {
+        width: 60px;
+        padding: 5px;
+        text-align: center;
+      }
+      .buy-now,
+      .add-to-cart {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 5px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .buy-now:hover,
+      .add-to-cart:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="advertisement">
+        <img
+          src="/SHOP_ME_VA_BE/ChiTietSanPham/sale70.jpg"
+          alt="Quảng cáo bên trái"
+        />
+      </div>
+
+      <div class="product-detail">
+        <a href="/SHOP_ME_VA_BE/BERANGOAI/berangoai.html">quay lại trang</a>
+        <img
+          src="/SHOP_ME_VA_BE/BERANGOAI/ghe-ngoi-o-to-gb-unari-stage-(2)-3877.png"
+          alt="Ghế ngồi ô tô GB Unari Stage"
+          class="product-image"
+        />
+        <div class="product-description">
+          <h2>Thông tin sản phẩm</h2>
+          <ul>
+            <li><strong>Thương hiệu:</strong> GB</li>
+            <li><strong>Quốc gia:</strong> Đức</li>
+            <li><strong>Trọng lượng sản phẩm:</strong> 13,3kg</li>
+            <li>
+              <strong>Kích thước sản phẩm:</strong> 53 x 44 x 59.5-83.5 cm
+            </li>
+            <li>
+              <strong>Độ tuổi sử dụng:</strong> Sơ sinh đến 36kg (khoảng 12
+              tuổi)
+            </li>
+            <li>
+              <strong>Tính năng:</strong>
+              <ul>
+                <li>
+                  Ghế ngồi có thể sử dụng ở tư thế quay về sau và quay về trước.
+                </li>
+                <li>
+                  Kết nối ISOFIX và cài dây cố định ghế 1 lần duy nhất để sử
+                  dụng cho cả chế độ quay về trước và sau.
+                </li>
+                <li>
+                  Ghế xoay 360⁰ giúp bố mẹ đưa trẻ ra/vào xe dễ dàng và thuận
+                  tiện.
+                </li>
+                <li>
+                  Đai Tether dây buộc ghế giúp giảm độ nghiêng về phía trước
+                  trong trường hợp va chạm trực diện.
+                </li>
+                <li>
+                  Hệ thống bảo vệ rộng cung cấp khả năng bảo vệ bổ sung khi có
+                  tác động từ 2 bên tựa đầu.
+                </li>
+                <li>
+                  Tựa cao và chắc chắn, bảo vệ cột sống cổ của trẻ nhẹ nhàng,
+                  cho phép điều chỉnh theo chiều cao của trẻ.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="purchase-options">
+          <div class="quantity">
+            <label for="quantity">Số lượng:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              value="1"
+              min="1"
+              class="quantity-input"
+            />
+          </div>
+          <button class="buy-now">Mua ngay</button>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+
+      <div class="advertisement">
+        <img
+          src="/SHOP_ME_VA_BE/ChiTietSanPham/bigsale.jpg"
+          alt="Quảng cáo bên phải"
+        />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ĐĂNG NHẬP TK</title>
+    <link rel="stylesheet" href="/SHOP_ME_VA_BE/Account/style.css" />
+  </head>
+  <body>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="loginClose">&times;</span>
+        <h2>Đăng Nhập</h2>
+        <form id="loginForm">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" name="loginEmail" required />
+
+          <label for="loginPassword">Mật khẩu</label>
+          <input
+            type="password"
+            id="loginPassword"
+            name="loginPassword"
+            required
+          />
+          <h3><a href="">Quên Mật Khẩu</a></h3>
+          <button type="submit">Đăng Nhập</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

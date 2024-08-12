@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+  background-color: #33ffff;
+  padding: 10px 0;
+}
+
+/* Top Bar Styles */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  background-color: #9ee48d;
+}
+
+.address {
+  flex: 1;
+  margin: 25px;
+  padding: 8px;
+  background-color: rgb(156, 153, 155);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 10px;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.address marquee {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%; /* Add space for marquee content to scroll */
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+}
+
+.contact a:hover {
+  background-color: #1c87c5;
+  border-radius: 15px;
+}
+
+/* Header Content Styles */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Navigation Styles */
+.main-nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-inner {
+  display: flex;
+  height: 100%; /* Ensure it fills the carousel container */
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+  height: 100%; /* Ensure the item takes the full height of the carousel */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%; /* Adjust height to match the carousel */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  width: 5%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.carousel-control-prev {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.carousel-control-next {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* Main Content Styles */
+main {
+  background-color: #e5f0e9;
+  padding: 20px;
+}
+
+.red {
+  color: red;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.box {
+  flex: 1 1 calc(25% - 20px);
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: calc(25% - 20px);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.gia {
+  color: red;
+}
+
+.giacu {
+  color: gray;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 150px;
+  padding: 8px;
+  background-color: #00ff55;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+}
+
+.add-to-cart:hover {
+  background-color: #e64a19;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+}
+
+.footer-content a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* Address Map Styles */
+.address {
+  margin-top: 20px;
+}
+
+.address iframe {
+  width: 100%;
+  height: 150px;
+  border: 0;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="/SHOP_ME_VA_BE/style.css" />
+    <style>
+        /* Liên Hệ Styling */
+#contact {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#contact h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<header>
+    <div class="top-bar">
+        <marquee class="address">947/4/1B Đ. CÁCH MẠNG THÁNG 8 PHƯỜNG 7, TÂN BÌNH, THÀNH PHỐ</marquee>
+        <div class="contact">
+            <p>Hotline: <span class="redsdt">0946 416 466</span></p>
+            <a href="#">Khuyến Mãi</a>
+            <a href="#">Hướng Dẫn Thanh Toán</a>
+            <a href="/SHOP_ME_VA_BE/Dichvu/chinhsach.html">Chính Sách</a>
+            <a href="#">Cẩm Nang</a>
+            <a href="#">Liên Hệ</a>
+            <a href="/SHOP_ME_VA_BE/Account/log.html">Đăng Nhập</a>
+            <a href="/SHOP_ME_VA_BE/Account/create.html">Đăng Ký</a>
+        </div>
+    </div>
+    <div class="header-content">
+        <a href="/SHOP_ME_VA_BE/TRANGCHU/index.html"><img src="https://shopmevabe.com.vn/thumb/189x41/1/upload/hinhanh/shop_me_va_be__1_-removebg-preview-8698.png" alt="Logo" class="logo"></a>
+        <div class="search-box">
+            <input type="text" placeholder="Bố mẹ muốn tìm kiếm gì hôm nay?..." />
+            <button type="submit">Tìm</button>
+        </div>
+        <nav class="main-nav">
+            <a href="#">| BÉ ĂN MẶC |</a>
+            <a href="/SHOP_ME_VA_BE/BENGU/bengu.html">| BÉ NGỦ |</a>
+            <a href="/SHOP_ME_VA_BE/BERANGOAI/berangoai.html">| BÉ RA NGOÀI |</a>
+            <a href="#">| ĐỒ CHƠI BÉ |</a>
+            <a href="#">| ĐỒ BÉ TẮM |</a>
+            <a href="#">| BÉ AN TOÀN |</a>
+            <a href="#">| ĐỒ CHO MẸ |</a>
+        </nav>
+    </div>
+</header>
+<body>
+    <section id="contact">
+        <h2>Liên Hệ Với Chúng Tôi</h2>
+        <div class="contact-info">
+            <p><strong>Địa chỉ:</strong> 947/4/1B Đ. Cách Mạng Tháng 8, Phường 7, Tân Bình, Thành Phố Hồ Chí Minh</p>
+            <p><strong>Điện thoại:</strong> 0946 416 466</p>
+            <p><strong>Email:</strong> <a href="mailto:info@shopmevabe.com">info@shopmevabe.com</a></p>
+        </div>
+        <form action="/send-message" method="post">
+            <h3>Gửi Tin Nhắn</h3>
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" required />
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+    
+            <label for="message">Tin Nhắn:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+    
+</body>
+</html>
