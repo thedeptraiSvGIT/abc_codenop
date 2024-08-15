@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng Shopee</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Giỏ Hàng Của Bạn</h1>
+    </header>
+    <main>
+      <div class="cart-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Sản Phẩm</th>
+              <th>Giá</th>
+              <th>Số Lượng</th>
+              <th>Tổng Tiền</th>
+              <th>Hành Động</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- Các sản phẩm sẽ được thêm vào đây -->
+          </tbody>
+        </table>
+      </div>
+      <div class="cart-summary">
+        <h3>Tổng Thanh Toán: <span id="cart-total">0đ</span></h3>
+        <button id="checkout">Thanh Toán</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
